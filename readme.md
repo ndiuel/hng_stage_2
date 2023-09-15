@@ -134,7 +134,7 @@ PATCH /api/Samuel
 Content-Type: application/json
 
 {
-   "age": 15, "email": el@gmail.co
+   "age": 15, "email": el@gmail.com
 }
 ```
 
