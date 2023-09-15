@@ -4,7 +4,7 @@ def test_create():
     r = requests.post('http://localhost:3000/api', json={'name': 'Samuel', 'age': 25, 'email': 'ndiuel@gmail.com'})
 
     data = r.json()
-    assert data['name'] == 'Samue'
+    assert data['name'] == 'Samuel'
     assert data['age'] == 25
     assert data['email'] == 'ndiuel@gmail.com'
     assert 'id' in data
