@@ -68,7 +68,7 @@ Content-Type: application/json
 }
 ```
 
-**Reponse:**
+**Response:**
 
 ```http
 {
@@ -85,7 +85,7 @@ GET /api/
 Content-Type: application/json
 ```
 
-**Reponse:**
+**Response:**
 
 ```http
 {
@@ -102,7 +102,7 @@ GET /api/Samuel
 Content-Type: application/json
 ```
 
-**Reponse:**
+**Response:**
 
 ```http
 {
@@ -117,7 +117,7 @@ GET /api/6504db8da541d26b31c8e898
 Content-Type: application/json
 ```
 
-**Reponse:**
+**Response:**
 
 ```http
 {
@@ -138,7 +138,7 @@ Content-Type: application/json
 }
 ```
 
-**Reponse:**
+**Response:**
 
 ```http
 {
@@ -153,8 +153,9 @@ Content-Type: application/json
 ```http
 DELETE /api/Samuel
 Content-Type: application/json
+```
 
-**Reponse:**
+**Response:**
 
 ```http
 {
