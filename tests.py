@@ -40,7 +40,7 @@ def test_update():
     r = requests.patch('https://hng-stage-2-ndiuel.vercel.app/api/Samuel', json=body)
     data = r.json()
     assert data['email'] == 'ndi@gmail.com'
-    print("--------------Update Record Passed--------------")
+    print("--------------Update Record Passed-------------")
 
 
 def test_delete():
