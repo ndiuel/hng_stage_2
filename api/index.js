@@ -24,17 +24,15 @@ database.once('connected', () => {
 
 const dataSchema = new mongoose.Schema({
     name: {
-        required: true,
         type: String
     },
     email: {
-        required: true,
         type: String
     }
 });
 
 
-const Person = mongoose.model('People', dataSchema);
+const Person = mongoose.model('Person', dataSchema);
 
 
 const transform = data => (
