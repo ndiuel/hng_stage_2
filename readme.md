@@ -64,7 +64,7 @@ POST /api/
 Content-Type: application/json
 
 {
-  "name": "Samuel", "age": 25, "email": "ndiuel@gmail.com"
+  "name": "Samuel", "email": "ndiuel@gmail.com"
 }
 ```
 
@@ -72,7 +72,7 @@ Content-Type: application/json
 
 ```http
 {
-  "name": "Samuel", "age": 25, "email": "ndiuel@gmail.com"
+  "name": "Samuel", "email": "ndiuel@gmail.com"
 }
 ```
 
@@ -89,7 +89,7 @@ Content-Type: application/json
 
 ```http
 {
-  "name": "Samuel", "age": 25, "email": "ndiuel@gmail.com"
+  "name": "Samuel", "email": "ndiuel@gmail.com"
 }
 ```
 
@@ -106,7 +106,7 @@ Content-Type: application/json
 
 ```http
 {
-  "name": "Samuel", "age": 25, "email": "ndiuel@gmail.com"
+  "name": "Samuel", "email": "ndiuel@gmail.com"
 }
 ```
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 
 ```http
 {
-  "name": "Samuel", "age": 25, "email": "ndiuel@gmail.com"
+  "name": "Samuel", "email": "ndiuel@gmail.com"
 }
 ```
 
@@ -134,7 +134,7 @@ PATCH /api/Samuel
 Content-Type: application/json
 
 {
-   "age": 15, "email": "el@gmail.com"
+   "email": "el@gmail.com"
 }
 ```
 
@@ -142,7 +142,7 @@ Content-Type: application/json
 
 ```http
 {
-  "name": "Samuel", "age": 15, "email": "el@gmail.com"
+  "name": "Samuel", "email": "el@gmail.com"
 }
 ```
 

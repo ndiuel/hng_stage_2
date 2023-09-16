@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 
 const mongoPassword = 'uUVU6zXm8dxpjLRa';
 
-const mongoString = `mongodb+srv://ndiuel:${mongoPassword}@cluster0.yfsqqde.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp`;
+const mongoString = `mongodb+srv://ndiuel:${mongoPassword}@cluster0.nelkdpf.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp`;
 
 
 
@@ -27,10 +27,6 @@ const dataSchema = new mongoose.Schema({
         required: true,
         type: String
     },
-    age: {
-        required: true,
-        type: Number
-    },
     email: {
         required: true,
         type: String
@@ -38,11 +34,11 @@ const dataSchema = new mongoose.Schema({
 });
 
 
-const Person = mongoose.model('Data', dataSchema);
+const Person = mongoose.model('People', dataSchema);
 
 
 const transform = data => (
-    { name: data.name, age: data.age, email: data.email, id: data._id }
+    { name: data.name, email: data.email, id: data._id }
 )
 
 const app = express();
@@ -52,7 +48,6 @@ app.use(express.json());
 app.post('/api', async (req, res) => {
     const person = new Person({
         name: req.body.name,
-        age: req.body.age,
         email: req.body.email
     });
     try {
@@ -60,6 +55,7 @@ app.post('/api', async (req, res) => {
         res.status(200).json(transform(data));
     }
     catch (error) {
+        console.log(error.message)
         res.status(400).json({ message: error.message })
     }
 
